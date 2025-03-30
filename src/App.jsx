@@ -1,22 +1,22 @@
 import iconStar from "./assets/icon-star.svg"
 import illustration from "./assets/illustration-thank-you.svg"
-
 import { useState } from "react"
+
 export function App() {
   const [submited, setSubmited] = useState(false)
   const [rateNote, setRateNote] = useState(0)
 
   function handleSubmit() {
-    setSubmited(true)
-  }
-
-  function handleChangeRateNote(value) {
     if (rateNote !== 0) {
       setSubmited(true)
       return
     }
 
     alert("Please, choose a rate button!")
+  }
+
+  function handleChangeRateNote(value) {
+    setRateNote(value)
   }
 
   return (
@@ -43,9 +43,15 @@ export function App() {
       </div>
     )
       : (
-        <div className="bg-radial-gradient max-w-103 px-6 pt-6 pb-8 rounded-2xl font-overpass">
-          <img src={illustration} alt="imagem" />
-        </div>
+        <div className="bg-radial-gradient max-w-103 px-6 pt-6 pb-8 rounded-2xl font-overpass text-center">
+          <img src={illustration} alt="imagem" className="mx-auto mb-6" />
+
+          <p className="mb-6 text-orange bg-dark-blue w-fit mx-auto px-3 py-1.25 rounded-3xl">You selected {rateNote} out of 5!</p>
+
+          <h1 className="font-bold text-2xl mb-2.5">Thank you!</h1>
+
+          <p className="text-light-grey text-sm leading-1"> We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch! </p>
+        </div >
       )
 
   )
