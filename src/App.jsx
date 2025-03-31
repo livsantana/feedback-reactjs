@@ -30,7 +30,7 @@ export function App() {
 
         <h1 className="font-bold text-2xl mb-2.5">How did we do?</h1>
         <p className="text-light-gray text-sm leading-1 mb-6">Please let us know how we did with your support request. All feedback is appreciated 
-          to help us improve our offering!</p>
+          to help us improve our offering! </p>
 
         <div className="flex justify-between mb-6">
           <input type="button" value={1} className="bg-dark-blue w-10.5 h-10.5 rounded-full text-sm text-medium-gray font-bold focus:bg-medium-grey
