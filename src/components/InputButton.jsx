@@ -1,4 +1,4 @@
-export function InputButton({ value, handleChangeRateNote }) {
+export function InputButton({ value, setRateNote }) {
     function handleChangeRateNote(value) {
         setRateNote(value)
       }
