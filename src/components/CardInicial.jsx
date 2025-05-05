@@ -23,11 +23,11 @@ export function CardInicial({ setRateNote, setSubmited, rateNote}) {
             to help us improve our offering!</p>
 
           <div className="flex justify-between mb-6">
-            <InputButton value={1} setRateNote={setRateNote}/>
-            <InputButton value={2} setRateNote={setRateNote}/>
-            <InputButton value={3} setRateNote={setRateNote}/>
-            <InputButton value={4} setRateNote={setRateNote}/>
-            <InputButton value={5} setRateNote={setRateNote}/>
+            <InputButton value={1} setRateNote={handleChangeRateNote}/>
+            <InputButton value={2} setRateNote={handleChangeRateNote}/>
+            <InputButton value={3} setRateNote={handleChangeRateNote}/>
+            <InputButton value={4} setRateNote={handleChangeRateNote}/>
+            <InputButton value={5} setRateNote={handleChangeRateNote}/>
           </div>
 
           <button className="bg-orange w-full py-3 rounded-3xl uppercase font-bold tracking-1 hover:bg-white hover:text-orange cursor-pointer
