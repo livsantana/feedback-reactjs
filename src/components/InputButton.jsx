@@ -1,5 +1,5 @@
 export function InputButton({ value, setRateNote }) {
-    function handleChangeRateNote(value) {
+    function setRateNote(value) {
         setRateNote(value)
       }
       
