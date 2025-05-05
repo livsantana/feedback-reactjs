@@ -4,7 +4,7 @@ import { InputButton } from "./InputButton"
 export function CardInicial({ setRateNote, setSubmited, rateNote}) {
   function handleSubmit() {
     if(rateNote !== 0) {
-      setSubmited(!submited)
+      setSubmited(true)
       return
     }
 
